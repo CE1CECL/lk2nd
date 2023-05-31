@@ -172,7 +172,7 @@ static inline void panel_rm67162_wqvga_cmd_select(struct panel_struct *panel,
 	pinfo->mipi.panel_cmds = rm67162_wqvga_cmd_on_command;
 	pinfo->mipi.num_of_panel_cmds = ARRAY_SIZE(rm67162_wqvga_cmd_on_command);
 	memcpy(phy_db->timing, rm67162_wqvga_cmd_timings, TIMING_SIZE);
-	phy_db->regulator_mode = DSI_PHY_REGULATOR_DCDC_MODE;
+	phy_db->regulator_mode = DSI_PHY_REGULATOR_LDO_MODE;
 }
 
 #endif /* _PANEL_RM67162_WQVGA_CMD_H_ */
