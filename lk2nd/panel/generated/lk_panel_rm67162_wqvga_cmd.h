@@ -135,17 +135,17 @@ static struct lane_configuration rm67162_wqvga_cmd_lane_config = {
 };
 
 static const uint32_t rm67162_wqvga_cmd_timings[] = {
-	0x5d, 0x12, 0x0c, 0x00, 0x34, 0x36, 0x10, 0x16, 0x0f, 0x03, 0x04, 0x00
+	0x43, 0x08, 0x02, 0x00, 0x1e, 0x22, 0x06, 0x0a, 0x03, 0x03, 0x04, 0x00
 };
 
 static struct panel_timing rm67162_wqvga_cmd_timing_info = {
-	.tclk_post = 0x05,
-	.tclk_pre = 0x15,
+	.tclk_post = 0x07,
+	.tclk_pre = 0x10,
 };
 
 static struct panel_reset_sequence rm67162_wqvga_cmd_reset_seq = {
 	.pin_state = { 1, 0, 1 },
-	.sleep = { 10, 20, 10 },
+	.sleep = { 20, 20, 20 },
 	.pin_direction = 2,
 };
 

@@ -20,7 +20,7 @@ static struct panel_config hx8379c_fwvga_video_panel_data = {
 	/* .panel_orientation not supported yet */
 	.panel_framerate = 60,
 	.panel_lp11_init = 1,
-	.panel_init_delay = 0,
+	.panel_init_delay = 7000,
 };
 
 static struct panel_resolution hx8379c_fwvga_video_panel_res = {
